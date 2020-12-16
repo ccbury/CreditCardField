@@ -39,7 +39,7 @@ document.getElementById("payNow").addEventListener("click", function(){
 
 document.querySelector("#cc").addEventListener("keypress", event => {
 	var value = document.getElementById("cc").value;
-	value = value.replace(/\D/g, '');
+	value = value.replace(/\s/g, '');
 	if(!/[ 0-9\/]+/.test(event.key) || value.length>15){
 		event.preventDefault();
 	}
@@ -48,8 +48,8 @@ document.querySelector("#cc").addEventListener("keypress", event => {
 
 function nameCheck(){
 	var name = document.getElementById("cname").value;
-	var value = name.replace(/\D/g, '');
-	if(/^[a-zA-Z]+$/.test(name)){
+	var value = name.replace(/\s/g, '');
+	if(/^[a-zA-Z]+$/.test(value)){
 		document.getElementById("cname").style.borderColor = "green";
 		return;
 	} else {
