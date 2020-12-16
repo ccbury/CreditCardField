@@ -1,0 +1,47 @@
+<meta charset="UTF-8">
+<link rel="stylesheet" href="style.css"></style>
+<div class="row">
+	<div class="col-75">
+		<div class="container">
+			<h3>Payment</h3>
+			<label for="cname">Name on Card</label>
+			<input type="text" id="cname" name="cardname" placeholder="John Doe"/>
+			<div class="form-group" id="card-number-field">
+				<label for="cc">Credit card number</label>
+				<input type="text" id="cc" name="creditcard" placeholder="4242 4242 4242 4242" value="" class="field" />
+		   </div>
+			<label for="exp">Expiry</label>
+			<div class="form-group" id="expiration-date">
+				<select id="month">
+					<option value="01">January</option>
+					<option value="02">February </option>
+					<option value="03">March</option>
+					<option value="04">April</option>
+					<option value="05">May</option>
+					<option value="06">June</option>
+					<option value="07">July</option>
+					<option value="08">August</option>
+					<option value="09">September</option>
+					<option value="10">October</option>
+					<option value="11">November</option>
+					<option value="12">December</option>
+				</select>
+				<select id = "year">
+					<option value="20"> 2020</option>
+					<option value="21"> 2021</option>
+					<option value="22"> 2022</option>
+					<option value="23"> 2023</option>
+					<option value="24"> 2024</option>
+					<option value="25"> 2025</option>
+				</select>
+			</div>
+			
+			<label for="cvv">CVV</label>
+			<input type="text" id="cvv" name="cvv" placeholder="352" />
+
+			<button type="submit" class="btn" id="payNow">Submit</button>
+
+		</div>
+	</div>
+</div>
+<script src="script.js"></script>

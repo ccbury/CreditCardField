@@ -1,0 +1,25 @@
+{
+  "name": "task-2",
+  "version": "1.0.0",
+  "description": "Small tester application for mastercard interview",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "start": "node index"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.2.2",
+    "babel-preset-react": "^6.24.1",
+    "html-webpack-plugin": "^4.5.0",
+    "webpack": "^5.10.3",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
